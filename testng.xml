@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/testing/selenium/JavaCourse/the-internet.herokuapp.com">
+        <classes>
+<!--            <class name="findElementPackage.NowFindo"/>-->
+<!--            <class name="FromloginToHome.LoginTestCases"/>-->
+<!--            <class name="search.Search"></class>-->
+<!--            <class name="dropDown.Dropdown"></class>-->
+<!--            <class name="checkbox.Checkboxes"></class>-->
+<!--            <class name="tablesElements.tables"></class>-->
+            <class name="isElementPresent.IsPresent"></class>
+
+
+        </classes>
+    </test>
+</suite>
