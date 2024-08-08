@@ -3,6 +3,7 @@ package isElementPresent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -30,6 +31,25 @@ public class IsPresent {
             System.out.println(e);
             return false;
         }
+    }
+    @Test
+    public void ApplyIsPresent()
+    {
+        if(CheckElePresent(By.xpath("//*[@id=\"checkboxes\"]/input[1]"))){
+            WebElement checkBox1 = driver.findElement(By.xpath("//*[@id=\"checkboxes\"]/input[1]"));
+            if(!checkBox1.isSelected())
+            {
+                checkBox1.click();
+            }
+        }
+        else {
+            System.out.println("i don't find that element");
+        }
+    }
+    @AfterTest
+    public void AfterTesting()
+    {
+        driver.quit();
     }
 
 
